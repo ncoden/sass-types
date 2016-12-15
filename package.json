@@ -2,6 +2,7 @@
   "name": "sass-types",
   "version": "0.1.0",
   "description": "Sass Types",
+  "description": "✨ Awesome Type Checking in Sass",
   "main": " ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
