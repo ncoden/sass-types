@@ -1,5 +1,5 @@
 
-@function st-add-type($type, $func, $args: ()) {
+@function st-add-type($type, $func, $args: (), $deps: ()) {
   @if type-of($type) == 'list' {
     @each $t in $type {
       $_: st-add-type($t, $func, $args, $deps);
@@ -9,7 +9,8 @@
     $-st-test-functions: map-merge($-st-test-functions, ($type:
       (
         func_name: $func,
-        func_args: $args
+        func_args: $args,
+        deps: $deps
       )
     )) !global;
   }

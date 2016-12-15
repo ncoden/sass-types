@@ -7,7 +7,13 @@
 
   $func_name: map-get($type_datas, 'func_name');
   $func_args: map-get($type_datas, 'func_args');
+  $deps: map-get($type_datas, 'deps');
 
+  @each $dep in $deps {
+    @if not st-check-type($value, $dep) {
+      @return false;
+    }
+  }
   $pass: call($func_name, $value, $func_args...);
   @return $pass;
 }
