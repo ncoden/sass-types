@@ -1,0 +1,24 @@
+
+@function st-add-default-types() {
+  $_: st-add-type(('map', 'Map'),       -st-test-map);
+  $_: st-add-type(('list', 'List'),     -st-test-type, ('list'));
+  $_: st-add-type(('string', 'String'), -st-test-type, ('string'));
+  $_: st-add-type(('number', 'Number'), -st-test-type, ('number'));
+  $_: st-add-type(('bool', 'Boolean'),  -st-test-type, ('bool'));
+  $_: st-add-type(('color', 'Color'),   -st-test-type, ('color'));
+  @return null;
+}
+
+@function -st-test-type($value, $type) {
+  @return type-of($value) == $type;
+}
+
+@function -st-test-map($value) {
+  @if type-of($value) == 'map' {
+    @return true;
+  }
+  @else if type-of($value) == 'list' and length($value) == 0 {
+    @return true;
+  }
+  @return false;
+}

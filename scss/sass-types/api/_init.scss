@@ -2,5 +2,8 @@
 @function st-init($default_types: true) {
     $-st-test-functions: () !default !global;
 
+    @if $default_types == true {
+        $_: st-add-default-types();
+    }
     @return null;
 }
