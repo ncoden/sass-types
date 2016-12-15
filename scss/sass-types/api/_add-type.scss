@@ -1,0 +1,18 @@
+
+@function st-add-type($type, $func, $args: (), $deps: ()) {
+  @if type-of($type) == 'list' {
+    @each $t in $type {
+      $_: st-add-type($t, $func, $args, $deps);
+    }
+  }
+  @else if type-of($type) == 'string' {
+    $-st-test-functions: map-merge($-st-test-functions, ($type:
+      (
+        func_name: $func,
+        func_args: $args,
+        deps: $deps
+      )
+    )) !global;
+  }
+  @return null;
+}

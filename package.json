@@ -1,0 +1,19 @@
+{
+  "name": "sass-types",
+  "version": "0.2.0",
+  "description": "✨ Awesome Type Checking in Sass",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncoden/sass-types.git"
+  },
+  "author": "Nicolas Coden <nicolas@ncoden.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ncoden/sass-types/issues"
+  },
+  "homepage": "https://github.com/ncoden/sass-types#readme"
+}

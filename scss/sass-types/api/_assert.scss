@@ -1,0 +1,21 @@
+
+@function st-assert($msg, $args) {
+  $pass_all: true;
+
+  @each $arg in $args {
+    $type: nth($arg, 1);
+    $value: nth($arg, 2);
+
+    $pass: st-check-type($value, $type);
+    @if not $pass {
+      $pass_all: false;
+      @if $pass == null {
+        $_: -st-throw-error('Unknown type "' + $type + '"', $msg);
+      }
+      @else if $pass == false {
+        $_: -st-throw-error('Wrong type "' + $type + '"', $msg);
+      }
+    }
+  }
+  @return $pass_all;
+}
