@@ -1,0 +1,11 @@
+
+@function -st-throw-error($error, $prefix: null) {
+  $msg: '';
+  @if $prefix != null {
+    $msg: $msg + $prefix + ': ';
+  }
+  $msg: $msg + $error;
+  @error $msg;
+
+  @return null;
+}

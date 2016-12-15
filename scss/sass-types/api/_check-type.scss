@@ -1,0 +1,13 @@
+
+@function st-check-type($value, $type) {
+  $type_datas: map-get($-st-test-functions, $type);
+  @if ($type_datas == null) {
+    @return null;
+  }
+
+  $func_name: map-get($type_datas, 'func_name');
+  $func_args: map-get($type_datas, 'func_args');
+
+  $pass: call($func_name, $value, $func_args...);
+  @return $pass;
+}

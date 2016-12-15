@@ -1,0 +1,6 @@
+
+@function st-init($default_types: true) {
+    $-st-test-functions: () !default !global;
+
+    @return null;
+}
