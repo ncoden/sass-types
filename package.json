@@ -1,7 +1,6 @@
 {
   "name": "sass-types",
-  "version": "0.1.0",
-  "description": "Sass Types",
+  "version": "0.2.0",
   "description": "✨ Awesome Type Checking in Sass",
   "main": " ",
   "scripts": {

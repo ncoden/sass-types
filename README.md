@@ -20,4 +20,4 @@ npm install ncoden/sass-types
 }
 ```
 
-Version 0.1.0 - MIT License.
+Version 0.2.0 - MIT License.
