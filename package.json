@@ -2,7 +2,7 @@
   "name": "sass-types",
   "version": "0.2.0",
   "description": "✨ Awesome Type Checking in Sass",
-  "main": " ",
+  "main": "eyeglass-exports.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,4 +16,7 @@
     "url": "https://github.com/ncoden/sass-types/issues"
   },
   "homepage": "https://github.com/ncoden/sass-types#readme"
+  "dependencies": {
+    "eyeglass": "^1.2.1"
+  }
 }
