@@ -10,12 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/ncoden/sass-types.git"
   },
-  "author": "Nicolas Coden <nicolas@ncoden.fr>",
+  "author": {
+    "name": "Nicolas Coden",
+    "email": "nicolas@ncoden.fr",
+    "url": "https://ncoden.fr"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ncoden/sass-types/issues"
   },
-  "homepage": "https://github.com/ncoden/sass-types#readme"
+  "homepage": "https://github.com/ncoden/sass-types#readme",
+  "files": [
+    "scss"
+  ],
+  "keywords": ["eyeglass-module", "sass", "types", "sass-types"],
   "dependencies": {
     "eyeglass": "^1.2.1"
   }
